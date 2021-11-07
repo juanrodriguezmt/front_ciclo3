@@ -61,7 +61,7 @@ function pintarRespuestaSkate(response){
 function cargarDatosSkate(id) {
     $.ajax({
         dataType: 'json',
-        url:"http://129.151.114.26:8080/api/Skate/"+id,
+        url:"http://129.151.114.26:8080/api/Bike/"+id,
         //url: "http://localhost:8080/api/Skate/" + id,
         type: 'GET',
 
@@ -103,7 +103,7 @@ function agregarSkate() {
             $.ajax({
                 type: "POST",
                 contentType: "application/json",
-                url:"http://129.151.114.26:8080/api/Skate/save",
+                url:"http://129.151.114.26:8080/api/Bike/save",
                 //url: "http://localhost:8080/api/Skate/save",
                 data: dataToSend,
                 datatype: 'json',
@@ -141,7 +141,7 @@ console.log(dataToSend);
         {
             dataType: 'json',
             data: dataToSend,
-            url:"http://129.151.114.26:8080/api/Skate/"+idElemento,
+            url:"http://129.151.114.26:8080/api/Bike/"+idElemento,
             //url: "http://localhost:8080/api/Skate/" + idElemento,
             type: 'DELETE',
             contentType: "application/JSON",
