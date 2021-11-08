@@ -30,17 +30,20 @@
     </div>
     </nav>
 
-    <div id="resultadoMensajes"></div>
+    
     <input type="text" id="messagetext" placeholder="mensaje">
-    <button onclick="guardarInformacionMensajes()">Guardar Mensajes</button>
-    <button onclick="autoInicioMensajes()">Ver Mensajes</button>
+    <label>CLIENTE:</label>
     <select id="select-client"></select>
     <script type="text/javascript">
         window.onload = autoInicioRelacionCliente();
     </script>
+    <label>BICICLETA:</label>
         <select id="select-bike"></select>
         <script type="text/javascript">
             window.onload = autoInicioSkate();
         </script>
+    <div id="resultadoMensajes"></div>
+    <button onclick="guardarInformacionMensajes()">Guardar Mensajes</button>
+    <button onclick="autoInicioMensajes()">Ver Mensajes</button>
 </body>
 </html>
