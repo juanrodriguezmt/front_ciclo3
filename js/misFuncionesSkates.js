@@ -49,9 +49,9 @@ function pintarRespuestaSkate(response){
         myTable+="<td>" + response[i].year + "</td>";
         myTable+="<td>" + response[i].description + "</td>";
         myTable+="<td>" + response[i].category.name + "</td>";
-        myTable+='<td><button class = "botonSkate2" onclick="borrar(' + response[i].id + ')">Borrar Skate!</button></td>';
-        myTable+='<td><button class = "botonSkate2" onclick="cargarDatosSkate(' + response[i].id + ')">Editar Skate!</button></td>';
-        myTable+='<td><button class = "botonSkate2" onclick="actualizar(' + response[i].id + ')">Actualizar Skate!</button></td>';
+        myTable+='<td><button class = "botonSkate2" onclick="borrar(' + response[i].id + ')">Borrar Bicicleta</button></td>';
+        myTable+='<td><button class = "botonSkate2" onclick="cargarDatosSkate(' + response[i].id + ')">Editar Bicicleta</button></td>';
+        myTable+='<td><button class = "botonSkate2" onclick="actualizar(' + response[i].id + ')">Actualizar Bicicleta</button></td>';
         myTable+="</tr>";
     }
     myTable+="</table>";
