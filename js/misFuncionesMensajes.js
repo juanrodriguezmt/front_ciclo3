@@ -23,7 +23,7 @@ function autoInicioSkate(){
         datatype:"JSON",
         success:function(respuesta){
         
-            let $select = $("#select-skate");
+            let $select = $("#select-bike");
             $.each(respuesta, function (id, name) {
                 $select.append('<option value='+name.id+'>'+name.name+'</option>');
          
@@ -76,7 +76,7 @@ function guardarInformacionMensajes(){
     let var2 = {
         
         messageText:$("#messagetext").val(),
-        skate:{id: +$("#select-skate").val()},
+        bike:{id: +$("#select-bike").val()},
         client:{idClient: +$("#select-client").val()},
 
      
@@ -114,7 +114,7 @@ function actualizarInformacionMensaje(idElemento){
     let myData={
         idMessage:idElemento,
         messageText:$("#messagetext").val(),
-        skate:{id: +$("#select-skate").val()},
+        bike:{id: +$("#select-bike").val()},
         client:{idClient: +$("#select-client").val()},
 
     

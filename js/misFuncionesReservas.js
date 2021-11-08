@@ -23,7 +23,7 @@ function autoInicioSkate(){
         datatype:"JSON",
         success:function(respuesta){
         
-            let $select = $("#select-skate");
+            let $select = $("#select-bike");
             $.each(respuesta, function (id, name) {
                 $select.append('<option value='+name.id+'>'+name.name+'</option>');
          
@@ -43,7 +43,7 @@ function agregarReservation() {
             startDate: $("#startDate").val(),
             devolutionDate: $("#devolutionDate").val(),
             status: $("#status").val(),
-            skate:{id: +$("#select-skate").val()},
+            bike:{id: +$("#select-bike").val()},
             client:{idClient: +$("#select-client").val()},
             
         }
@@ -184,7 +184,7 @@ function actualizarReservation(idElemento) {
             startDate: $("#startDate").val(),
             devolutionDate: $("#devolutionDate").val(),
             status: $("#status").val(),
-            skate:{id: +$("#select-skate").val()},
+            bike:{id: +$("#select-bike").val()},
             client:{idClient: +$("#select-client").val()},
         }
 
