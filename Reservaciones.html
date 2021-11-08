@@ -37,7 +37,9 @@
 <label>STATUS: Estado de la Reservacion "completed / cancelled</label>
 <input class="controlReservation" type="text" id="status" placeholder="escriba completed o cancelled para el estado de la Reservacion ">
 
-<select id="select-client"></select>
+<button onclick="agregarReservation()">Guardar Reservacion</button>
+    <button onclick="listarReservation()">Ver Reservaciones</button>
+    <select id="select-client"></select>
     <script type="text/javascript">
         window.onload = autoInicioRelacionCliente();
     </script>
@@ -45,8 +47,5 @@
         <script type="text/javascript">
             window.onload = autoInicioSkate();
         </script>
- <button onclick=" agregarReservation()">Guardar Reserva</button>
- <div id="miListaReservation"></div>
- <button onclick=" listarReservation()">Ver reservaciones</button>
 </body>
 </html>
