@@ -56,7 +56,7 @@ function pintarRespuestaMensajes(respuesta){
         myTable+="<tr>";
         
         myTable+="<td>"+respuesta[i].messageText+"</td>";
-        myTable+="<td>"+respuesta[i].skate.name+"</td>";
+        myTable+="<td>"+respuesta[i].bike.name+"</td>";
         myTable+="<td>"+respuesta[i].client.name+"</td>";
         myTable+="<td> <button onclick=' actualizarInformacionMensaje("+respuesta[i].idMessage+")'>Actualizar</button>";
         myTable+="<td> <button onclick='borrarMensaje("+respuesta[i].idMessage+")'>Borrar</button>";

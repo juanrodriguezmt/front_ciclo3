@@ -108,7 +108,7 @@ function pintarRespuestaReservation(response){
         myTable+="<td>"+response[i].startDate+"</td>";
         myTable+="<td>"+response[i].devolutionDate+"</td>";
         myTable+="<td>"+response[i].status+"</td>";
-        myTable+="<td>"+response[i].skate.name+"</td>";
+        myTable+="<td>"+response[i].bike.name+"</td>";
         myTable+="<td>"+response[i].client.name+"</td>";
         myTable+='<td><button  onclick="borrarReservation(' + response[i].idReservation + ')">Borrar Reserva!</button></td>';
         myTable+='<td><button  onclick="cargarDatosReservation(' + response[i].idReservation + ')">Editar Reserva!</button></td>';
