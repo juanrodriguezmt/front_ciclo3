@@ -99,7 +99,7 @@ function pintarRespuestaReservation(response){
         myTable+="<td>Fecha Inicio</td>";
         myTable+="<td>fecha Devolucion</td>";
         myTable+="<td>Estado</td>";
-        myTable+="<td>Patineta</td>";
+        myTable+="<td>Bicicleta</td>";
         myTable+="<td>Cliente</td>";
      "</tr>";
       
